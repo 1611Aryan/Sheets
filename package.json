@@ -1,0 +1,15 @@
+{
+  "name": "gsheets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.49.9",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "build": "tsc -p . && sass SCSS:dist/CSS && cp index.html dist/",
+    "watchTS": "tsc --watch",
+    "watchSASS": "yarn sass --watch SCSS:dist/CSS "
+  }
+}
